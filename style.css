@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Secular+One&family=Tiro+Devanagari+Marathi&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header CSS */
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    /* border: 2px solid; */
+    margin-top: 10px;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a{
+    color: #1D1D1D;
+    font-family: 'Secular One', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.293px;
+}
+
+.navbar .menu ul{
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .menu ul a{
+    color: #1D1D1D;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar .menu ul a::after {
+    content: "";
+    width: 0px;
+    height: 2.5px;
+    background: black;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: .5s;
+}
+
+.navbar .menu ul a:hover::after{
+    width: 100%;
+
+}
+
+/* .navbar .menu ul a:hover{
+
+} */
+
+.button .primaryButton{
+    background: #1361F5;
+    border-radius: 5px;
+    padding: 10px 27px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.button .normalButton{
+    border-radius: 5px;
+    padding: 10px 27px;
+    color: #094BCA;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}                       /* Header CSS End */
+
+
+/* Main CSS */
+
+main{
+    padding: 70px 60px 0px 60px;
+    width: 100%;
+
+}               /* Main CSS End */
+
+
+/* Hero Section CSS */
+
+.hero{
+    display: flex;
+    height: 400px;
+    /* border: 2px solid; */
+}
+
+.hero .leftHero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0px;
+
+}
+
+.hero .leftHero h1{
+    color: #1D1D1D;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero .leftHero p{
+    color: #223140;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}               /* Hero Section CSS End*/
+
+
+/* Benefit Section CSS */
+
+.benefits{
+    display: flex;
+    margin-top: 70px;
+    gap: 20px;
+    height: 150px;
+}
+
+.benefits .singleBenefit{
+    /* border: 2px solid; */
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: space-between;
+    padding: 15px 10px;
+    align-items: start;
+    box-shadow: 0px 0px 5px 3px #454d5814;
+    border-radius: 8px;
+}
+
+.benefits .singleBenefit h3{
+    color: #223140;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.benefits .singleBenefit p{
+    color: #535558;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.benefits .singleBenefit img{
+    background-color: #ecb32d33;
+    border-radius: 50%;
+    padding: 5px;
+    width: 27px;    
+}                   /* Benefit Section CSS End*/
+
+
+
+/* Features Section CSS */
+
+.featuresSection{
+    margin-top: 70px;
+}
+
+.featuresSection .featureText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featuresSection .featureText h2{
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    width: 900px;
+    align-self: center;
+}
+
+.featuresSection .featureText p {
+    color: #223140;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    width: 900px;
+    align-self: center;
+    line-height: 28px;
+}
+
+.featuresSection .features{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.featuresSection .features .singleFeature{
+    display: flex;
+    flex-shrink: 1;
+    gap: 50px;
+}
+
+.featuresSection .features .singleFeature .leftFeature{
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.featuresSection .features .singleFeature .rightFeature{
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.featuresSection .features .singleFeature h2{
+    color: #094BCA;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.featuresSection .features .singleFeature h1{
+    color: #1D1D1D;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.featuresSection .features .singleFeature p{
+    color: #223140;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: -1px;
+}               /* Features Section CSS End */
+
+
+/* Integration Section CSS */
+
+.integration{
+    margin-top: 120px;
+    height: 400px;
+    background-color: rgba(217, 217, 217, 0.10);
+}
+
+.integration .singleIntegration{
+    display: flex;
+    gap: 50px;
+    margin: 0px 40px;
+}
+
+.leftIntegration h1{
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 60px;
+}
+
+.leftIntegration p{
+    color: #223140;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin: 40px 0px;
+}
+
+.rightIntegration{
+    margin-top: -80.9px;
+}               /* Integration Section CSS End */
+
+
+
+/* Customers Section CSS */
+
+.customers{
+    margin-top: 120px;
+}
+
+.customers .customerText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.customers .customerText h1{
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    width: 900px;
+    align-self: center;
+    letter-spacing: -1px;
+}
+
+.customers .customerText p{
+    color: #223140;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    width: 800px;
+    align-self: center;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+.customers .testimonials{
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+    height: 350px;
+}
+
+.customers .testimonials .singleTestimonial{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 3px #454d5814;
+    border-radius: 8px;
+}
+
+.customers .testimonials .singleTestimonial img{
+    margin-top: -80px;
+}
+
+.customers .testimonials .singleTestimonial p {
+    color: #535558;
+    text-align: center;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.customers .testimonials .singleTestimonial h4{
+    color: #D9D9D9;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.293px;
+}
+
+.customers .testimonials .singleTestimonial h3{
+    color: #223140;
+    font-size: 16px;
+    font-weight: 600;
+}               /* Customers Section CSS End */
+
+
+
+/* Awards Section CSS */
+
+.awards{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.awards .singleAward {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+}
+
+.awards .singleAward h1{
+    color: #094BCA;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.awards .singleAward p{
+    color: #223140;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}               /* Awards Section CSS End */
+
+
+
+/* Call To Action Section CSS */
+
+.callToAction{
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+    height: 235px;
+    background: rgba(217, 217, 217, 0.10);
+}
+
+.callToAction h1{
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    width: 900px;
+    align-self: center;
+    letter-spacing: -1px;
+}
+
+.callToAction p{
+    color: #223140;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    width: 800px;
+    align-self: center;
+    line-height: 28px;
+    letter-spacing: -1px;
+}           /* Call To Action Section CSS End */
+
+
+
+/* Resources Section CSS */
+
+.resourcesSection{
+    margin-top: 70px;
+}
+
+.resourcesSection h1{
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+}
+
+.resourcesSection .resources{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.resourcesSection .resources .singleResources{
+    width: auto;
+    box-shadow: 0px 0px 5px 3px #454d5814;
+    border-radius: 8px;
+}
+
+.resourcesSection .resources .singleResources img{
+    width: -webkit-fill-available;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.resourcesSection .resources .singleResources .content{
+    padding: 15px;
+}
+
+.resourcesSection .resources .singleResources .content .tag{
+    border-radius: 2px;
+    background: rgba(19, 97, 245, 0.10);
+    padding: 3px 8px;
+    color: var(--blue-base, #004CE6);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resourcesSection .resources .singleResources .content a {
+    color: #094BCA;
+    font-weight: 500;
+    line-height: 24px;
+    display: inline-flex;
+    padding: 10px 0px;
+}
+
+.resourcesSection .resources .singleResources .content p{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}           /* Resources Section CSS End */
+
+
+
+/* Footer Section CSS */
+
+footer{
+    margin-top: 70px;
+    padding: 60px 115px;
+    background: rgba(217, 217, 217, 0.10);
+}
+
+footer .content{
+    display: flex;
+}
+
+footer .content .section{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .content .section .footerContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .content .section-1{
+    width: 20%;
+}
+
+footer .content .section-1 a {
+    color: #1D1D1D;
+    font-family: 'Secular One', sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.293px;
+}
+
+footer .content .section-1 .footerContent p{
+    color: #535558;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+footer .content .section-1 .footerContent .socials{
+    display: flex;
+    gap: 30px ;
+}
+
+footer .content .section-1 .footerContent .socials i{
+    color: #094BCA;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+footer .content .section-1 .footerContent .socials i:hover{
+    color: #000000;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .content .section-2{
+    padding: 0px 0px 0px 70px;
+}
+
+footer .content .section-2 h3{
+    color: #1D1D1D;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 37px;
+}
+
+footer .content .section-2 .footerContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .content .section-2 .footerContent a{
+    color: #535558;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .2s;
+}
+
+footer .content .section-2 .footerContent a:hover{
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+footer .content .section-3{
+    padding: 0px 0px 0px 25px;
+}
+
+footer .content .section-3 h3{
+    color: #1D1D1D;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 37px;
+}
+
+footer .content .section-3 .footerContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .content .section-3 .footerContent a{
+    color: #535558;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .2s;
+}
+
+footer .content .section-3 .footerContent a:hover{
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+footer .content .section-4{
+    width: 40%;
+}
+
+footer .content .section-4 h3{
+    color: #1D1D1D;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 37px;
+}
+
+footer .content .section-4 .footerContent .singleBlog{
+    display: flex;
+    height: 85px;
+    width: auto;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 1px 2px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+footer .content .section-4 .footerContent .singleBlog img{
+    width: 33%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+footer .content .section-4 .footerContent .singleBlog .blogContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+footer .content .section-4 .footerContent .singleBlog p {
+    color: #535558;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+footer .content .section-4 .footerContent .singleBlog a {
+    color: #094BCA;
+    font-size: 14px;
+    font-weight: 500;
+}               /* Footer Section CSS End */
+
